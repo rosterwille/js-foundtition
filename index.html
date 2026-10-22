@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Zoom band karna (galat practice) -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <title>telly-counter</title>
+  </head>
+
+  <body>
+    <h1 id="num">0</h1>
+    <button id="plus">+</button>
+    <button id="minus">-</button>
+  </body>
+  <script>
+    let ad = 0;
+    let num = document.getElementById("num");
+    document.getElementById("plus").addEventListener("click", function () {
+      ad = ad + 1;
+      num.innerHTML = ad;
+    });
+    document.getElementById("minus").addEventListener("click", function () {
+      ad = ad - 1;
+      num.innerHTML = ad;
+    });
+  </script>
+</html>
